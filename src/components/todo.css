@@ -1,0 +1,153 @@
+* {
+  padding: 0px;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #307672;
+}
+
+.todo-container {
+  margin: 80px;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid red; */
+}
+.todo-container h1 {
+  color: white;
+}
+.todo-container h1:hover {
+  color: aqua;
+}
+
+.form-container {
+  margin: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.form-container input {
+  background-color: white;
+  font-size: 1.1rem;
+  width: 360px;
+  height: 40px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.form-container button {
+  font-size: 1.1rem;
+  background-color: white;
+  width: 160px;
+  height: 40px;
+  border-radius: 5px;
+}
+.form-container button:hover {
+  background-color: #307672;
+}
+/* data below the adding form  */
+.todosIcons-container {
+  display: flex;
+  flex-direction: column;
+}
+.todos-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 2px solid white;
+  width: 100%;
+}
+
+.todos-container div {
+  /* color: white; */
+  color: aqua;
+  font-size: 1.5rem;
+}
+.icons-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.5rem;
+  padding: 5px;
+}
+.icons-container li {
+  list-style-type: none;
+}
+#delete-icon {
+  color: red;
+}
+#check-icon {
+  color: white;
+}
+#update-icon {
+  color: rgb(109, 84, 110);
+}
+
+/* ---------------------responsive------------------------------------- */
+@media screen and (max-width: 600px) {
+  .todo-container {
+    padding: 40px;
+    padding: 0;
+    margin: 60px;
+  }
+  .todo-container h1 {
+    font-size: 1.1rem;
+  }
+  .todo-container h1:hover {
+    font-size: 1.3rem;
+    color: aquamarine;
+  }
+  .todos-container div {
+    box-sizing: border-box;
+  }
+  .divIpt p {
+    max-width: 200px;
+    word-wrap: break-word;
+  }
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    /* align-items:flex-end; */
+  }
+  .form-container input {
+    border-radius: 20px;
+    font-size: 1.5rem;
+  }
+  .form-container button {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    /* color: #307672; */
+    font-weight: bolder;
+    background-color: #307672;
+    border-color: white;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+  }
+  .form-container button:hover {
+    font-size: 1.6rem;
+    height: 50px;
+    /* border: 30px; */
+  }
+  .icons-container {
+    font-size: 2rem;
+    border: 2px solid red;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 750px) {
+  .divIpt p {
+    max-width: 500px;
+    word-wrap: break-word;
+  }
+}
+@media screen and (min-width: 750px) and (max-width: 1200px) {
+  .divIpt p {
+    max-width: 600px;
+    word-wrap: break-word;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .divIpt p {
+    max-width: 1000px;
+    word-wrap: break-word;
+  }
+}
